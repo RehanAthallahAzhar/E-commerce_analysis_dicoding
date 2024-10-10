@@ -19,3 +19,6 @@ pip install -r requirements.txt
 cd dashboard
 streamlit run dashboard.py
 ```
+
+## Streamlit URL :
+    https://e-commerce-analysis-dicoding.streamlit.app/
