@@ -1,5 +1,4 @@
 Babel==2.15.0
-Babel==2.11.0
 matplotlib==3.8.4
 pandas==2.2.3
 seaborn==0.13.2
