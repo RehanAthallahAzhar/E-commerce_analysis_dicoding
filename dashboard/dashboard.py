@@ -142,20 +142,15 @@ def create_RFM_analysis(orders_df, order_items_df, order_payments_df):
     # Display the first few rows of the resulting RFM dataframe
     return rfm_df
 
+# Current Working Directory: /mount/src/e-commerce_analysis_dicoding
+all_df = pd.read_csv("./dashboard/main_data.csv")
+orders_df = pd.read_csv("./data/orders_dataset.csv")
+order_items_df = pd.read_csv("./data/order_items_dataset.csv")
+order_payments_df = pd.read_csv("./data/order_payments_dataset.csv")
 
-
-
-all_df = pd.read_csv("main_data.csv")
-orders_df = pd.read_csv("../data/orders_dataset.csv")
-order_items_df = pd.read_csv("../data/order_items_dataset.csv")
-order_payments_df = pd.read_csv("../data/order_payments_dataset.csv")
-
-# with st.sidebar:
-#     # Menambahkan logo perusahaan
-#     st.image("https://github.com/dicodingacademy/assets/raw/main/logo.png")
 
 with st.sidebar:
-    st.image("./logo/online-shop-logo.png", use_column_width=True)
+    st.image("./dashboard/logo/online-shop-logo.png", use_column_width=True)
 
     st.title("Company Performance Dashboard 🌟")
 
